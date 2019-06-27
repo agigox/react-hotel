@@ -57,3 +57,4 @@ L'application permettra de:
 - Background Hotels : #D4D4D4
 - Background Panier : #EBEBEB
 
+===> POUR CETTE APPLICATION PLUSIEURS AXES D'AMELIORATION

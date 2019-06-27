@@ -7,6 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid;
+}
+.header {
+  border: 1px solid;
+  width: 100%;
+}
+
+.hotels {
+  width: 84%;
+  border: 1px solid;
+  float: left;
+}
+.cart {
+  border: 1px solid;
+  width: 15%;
+  float: right;
+}
+.home {
+  overflow: hidden;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

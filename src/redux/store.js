@@ -1,6 +1,6 @@
 import { createStore } from "redux";
 
-import addToCart from "./reducers";
+import {addToCart} from "./reducers";
 
 
 

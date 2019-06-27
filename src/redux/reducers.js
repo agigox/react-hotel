@@ -1,5 +1,5 @@
 import { hotels } from '../fixtures/hotels';
-import actionTypes from './actionTypes';
+import {actionTypes} from './actionTypes';
 
 const initialState = {
     cart: [],

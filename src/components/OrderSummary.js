@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 class OrderSummary extends Component {
 
     render() {
-        const {name, surname, addresse, email} = this.props.currentUser;
+        const {name, surname, address, email} = this.props.currentUser;
         return (
             <div className="user-details">
                 <h2>Informations utilisateur</h2>
                 <p>Nom : <strong>{name}</strong></p>
                 <p>Prénom : <strong>{surname}</strong></p>
-                <p>Adresse : <strong>{addresse}</strong></p>
+                <p>Adresse : <strong>{address}</strong></p>
                 <p>Email : <strong>{email}</strong></p>
                 <hr />
                 <h2>Informations Panier</h2>

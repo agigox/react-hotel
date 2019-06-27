@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { addToCart } from '../redux/actionCreators';
 
 class HotelItem extends Component {
 
@@ -32,8 +33,7 @@ class HotelItem extends Component {
 
 const mapDispatchToProps = dispatch => ({
     addToCart: (data) => {
-        dispatch({ type: 'ADD_TO_CART', playload: data })
-        console.log(data);
+        dispatch(addToCart(data));
     }
 });
 export default connect(null, mapDispatchToProps)(HotelItem)

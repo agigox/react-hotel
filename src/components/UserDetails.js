@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from "react-router-dom";
+import {addUser} from '../redux/actionCreators';
 
 
 class UserDetails extends Component {
@@ -68,7 +69,7 @@ class UserDetails extends Component {
 
 const mapDispatchToProps = dispatch => ({
     addUser: (data) => {
-        dispatch({ type: 'ADD_USER', playload: data })
+        dispatch(addUser(data))
     }
 });
 

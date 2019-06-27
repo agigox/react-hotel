@@ -2,10 +2,10 @@ import { hotels } from '../fixtures/hotels';
 import {actionTypes} from './actionTypes';
 
 const initialState = {
-    cart: [],
-    hotels,
-    currentUser: {}
-  };
+  cart: [],
+  hotels,
+  currentUser: {}
+};
   // Reducer the change the currently displayed actions
   export const addToCart = (state = initialState, action) => {
     switch (action.type) {

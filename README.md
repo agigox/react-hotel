@@ -9,6 +9,16 @@ cd react-hotel
 npm i
 ```
 - Les donnés des hôtels sont contenu dans le dossier fixtures
+
+- Pour lancer l'application, lancer la commande suivante:
+```
+npm run start
+```
+
+- Pour lancer les tests unitaires (les tests unitaires des _actionCreators_, _reducers_ et _App_ => manque du temps):
+```
+npm run test
+```
 ## Fonctionement
 
 Dans la page home, pour ajouter un produit cliquer sur son titre
@@ -34,6 +44,7 @@ L'application permettra de:
 - **redux**: La gestion de l'état au niveau de toute l'application
 - **react-redux**: Outil de connection entre React et Redux
 - **react-router-dom**: Le gestion des routes
+- **enzyme** and **chai**: pour les test
 
 - Le store de Redux contient:
     - Le panier

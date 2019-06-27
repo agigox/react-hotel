@@ -10,25 +10,11 @@ import OrderConfirmation from './components/OrderConfirmation';
 import { Provider } from "react-redux";
 import store from "./redux/store";
 
-console.log(store.getState());
-/*
-store.dispatch({
-  type: 'ADD_TO_CART',
-  playload: {
-    cart: {
-      name: 'Amine TABOU'
-    }
-  }
-})
-*/
-console.log(store.getState());
-
 function App() {
   return (
     <Provider store={store}>
       <Router>
           <Header />
-         
           <div className="container">
             <Route path="/" exact component={Home} />
             <Route path="/user-details/" component={UserDetails} />

@@ -10,27 +10,182 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid;
 }
 .header {
-  border: 1px solid;
   width: 100%;
+  background-color: #929292;
 }
-
-.hotels {
-  width: 84%;
-  border: 1px solid;
+.logos {
+  width: 80%;
+  margin: 0 auto; 
+  height: 50px;
+  padding-top: 5px;
+}
+.logos img:nth-child(1) {
   float: left;
+  
+}
+.logos img:nth-child(1) {
+  float: right;
+
+}
+.hotels {
+  background-color: #C8C9CA;
 }
 .cart {
-  border: 1px solid;
-  width: 15%;
-  float: right;
+  padding: 20px;
+  background-color: #EBEBEB;
 }
 .home {
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.hotel-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  margin-bottom: 50px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+
+.hotel-description {
+  padding-left: 10px;
+}
+
+.hotel-title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.hotel-definition {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.hotel-price {
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.valider-panier {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  padding-right: 10px;
+  background: black;
+  margin-top: 20px;
+  clear: both;
+}
+.valider-panier > a {
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+}
+.hotel-cart-item img {
+  width: 60px;
+}
+
+.hotel-cart-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.hotel-cart-item-title {
+  text-align: right;
+  font-size: 13px;
+  width: 150px;
+}
+.hotel-cart-item-price {
+  text-align: right;
+  font-size: 12px;
+  color: #e0e0e0;
+}
+
+.cart-total {
+  background: #0FDB00;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 50%;
+  float: right;
+  margin-bottom: 20px;
+}
+
+.total-cart-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.total-cart-box div:nth-child(2) {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerForm {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-details {
+  width: 50%;
+  margin: 0 auto;
+}
+.order-confiramtion {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
 }

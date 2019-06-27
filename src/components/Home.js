@@ -8,7 +8,6 @@ export default class Home extends Component {
             <div className='home'>
                 <Hotels />
                 <Cart />
-                <div className='clearfix'></div>
             </div>
         )
     }

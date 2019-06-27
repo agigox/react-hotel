@@ -28,6 +28,7 @@ function App() {
     <Provider store={store}>
       <Router>
           <Header />
+         
           <div className="container">
             <Route path="/" exact component={Home} />
             <Route path="/user-details/" component={UserDetails} />

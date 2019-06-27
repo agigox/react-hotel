@@ -14,10 +14,15 @@ class HotelItem extends Component {
         const {hotel} = this.props;
         return (
             <div className='hotel-item'>
+                
                 <img src={hotel.image} />
-                <h1 onClick={this.addToCart}>{hotel.title}</h1>
-                <p>{hotel.description}</p>
-                <div>{hotel.price} prix/nuit</div>
+                <div className="hotel-description">
+                    <div className="hotel-definition">
+                        <div onClick={this.addToCart} className="hotel-title">{hotel.title}</div>
+                        <div className="hotel-price">{hotel.price}€ prix/nuit</div>
+                    </div>
+                    <div>{hotel.description}</div>
+                </div>
                 
             </div>
         )

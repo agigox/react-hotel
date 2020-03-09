@@ -8,15 +8,15 @@ import OrderSummary from './components/OrderSummary';
 import OrderConfirmation from './components/OrderConfirmation';
 import SortHotels from './components/SortHotels';
 import GetNews from './components/GetNews';
-
-
-
+import Clock from './components/Clock';
+import {Counter} from './components/Counter';
 function App() {
   return (
-    
       <Router>
           <Header />
           <div className="container">
+            <Counter coo={true}/>
+            <Clock />
             <SortHotels />
             <GetNews />
             <Route path="/" exact component={Home} />

@@ -13,6 +13,10 @@ class HotelItem extends Component {
     }
     render() {
         const {hotel} = this.props;
+        const foo = [1];
+        const foo1 = [2, 3];
+        const foo2 = [...foo, foo1];
+        console.log(foo2)
         return (
             <div className='hotel-item'>
                 

@@ -3,9 +3,14 @@ import HotelItem from './HotelItem';
 import { connect } from 'react-redux';
 
 class Hotels extends Component {
+    handleClick() {
+        this.textInput.focus()
+    }
     render() {
         return (
             <div className='hotels'>
+                <input type="text" ref={(input) => this.textInput = input}></input>
+                <button onClick={() => this.handleClick()}>cli</button>
                 {this.props.hotels2.map((hotel, i) => {
                     return <HotelItem key={i} hotel={hotel} />
                 })}

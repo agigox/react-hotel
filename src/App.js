@@ -6,23 +6,25 @@ import {Header} from './components/Header';
 import UserDetails from './components/UserDetails';
 import OrderSummary from './components/OrderSummary';
 import OrderConfirmation from './components/OrderConfirmation';
+import SortHotels from './components/SortHotels';
+import GetNews from './components/GetNews';
 
-import { Provider } from "react-redux";
-import store from "./redux/store";
+
 
 function App() {
   return (
-    <Provider store={store}>
+    
       <Router>
           <Header />
           <div className="container">
+            <SortHotels />
+            <GetNews />
             <Route path="/" exact component={Home} />
             <Route path="/user-details/" component={UserDetails} />
             <Route path="/order-summary/" component={ OrderSummary} />
             <Route path="/order-confirmation/" component={OrderConfirmation} />
           </div>
       </Router>
-    </Provider>
   );
 }
 

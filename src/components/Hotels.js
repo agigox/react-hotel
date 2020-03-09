@@ -4,10 +4,9 @@ import { connect } from 'react-redux';
 
 class Hotels extends Component {
     render() {
-        
         return (
             <div className='hotels'>
-                {this.props.hotels.map((hotel, i) => {
+                {this.props.hotels2.map((hotel, i) => {
                     return <HotelItem key={i} hotel={hotel} />
                 })}
             </div>
@@ -18,7 +17,7 @@ class Hotels extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        hotels: state.hotels
+        hotels2: state.hotels
     }
 }
 

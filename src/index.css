@@ -10,6 +10,7 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  background-color: #0FDB00;
 }
 .header {
   width: 100%;
@@ -29,12 +30,8 @@ body {
   float: right;
 
 }
-.hotels {
-  background-color: #C8C9CA;
-}
 .cart {
   padding: 20px;
-  background-color: #EBEBEB;
 }
 .home {
   display: grid;
